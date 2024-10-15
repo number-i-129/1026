@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+body, html {
+    height: 100%; /* HTMLとボディの高さを100%に設定 */
+    margin: 0;  /* 余白をなくす */
+    padding: 0;  /* パディングもなくす */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 中央揃え */
+    background-color: #eff1f7; /* 背景色 */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+header a {
+    font-size: 17px;
+    color: #007AFF;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 16px;
+    flex-grow: 1; /* タイトルが中央に来るように */
+    text-align: center;
+    margin-left: -15px;
+}
+
+.refresh-btn a {
+    color: #44454f;
+    font-size: 24px;
+    text-decoration: none;
+}
+  
+h2 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.gate-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2e3344;
+    font-weight: bold;
+    margin-bottom: 6px; 
+}
+
+.gate-icon {
+    width: 18px; /* 画像のサイズを調整 */
+    height: auto;
+    margin-right: 5px; /* 画像とテキストの間にスペースを追加 */
+}
+
+.circle-container {
+    position: relative;
+    background-color: #b2c6e3;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    height: 355px;
+    margin: 0 auto;
+    transition: background-color 1s ease-in-out; /* 色を1秒かけて滑らかに変化 */
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    border: 1.5px dashed #999;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.info-text .time {
+    font-size: 13px;
+    color: #333;
+    margin-top: 7px;
+}
+
+.warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #000105;
+    margin-top: 9px;
+    padding: 4px;
+    border: 1px solid #ffded4;
+}
+
+.warning-icon {
+    width: 15px;  /* アイコンのサイズを調整 */
+    height: auto;
+    margin-right: 5px; /* アイコンとテキストの間に余白を追加 */
+}
+
+}
+.ticket-info p {
+    margin: 1px 0px 6px 2px;
+    font-size: 15px;
+    font-waight: lighter;
+    text-align: left;
+}
+.ticket-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.ticket-box {
+    width: 350px; /* ボックスの幅 */
+    padding: 10px; /* ボックス内の余白 *
+    border: 2px solid #ffffff; /* ボックスの枠線 */
+    border-radius: 10px; /* 角丸 */
+    background-color: #ffffff; /* 背景色 */
+    margin: 10px auto ; /* ボックスの上下左右の余白 */
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+}
+
+.ticket-image {
+    width: 100%; /* 画像の幅をボックスに合わせる */
+    height: auto; /* 画像の高さを自動調整 */
+    margin: 0px ; /* 画像上下の余白 */
+}
